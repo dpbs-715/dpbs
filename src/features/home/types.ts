@@ -7,4 +7,5 @@ export type ContactItem = {
 export type ProjectItem = {
   title: string
   description: string
+  href?: string
 }
