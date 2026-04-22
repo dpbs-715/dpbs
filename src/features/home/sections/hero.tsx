@@ -3,15 +3,17 @@ import { contacts, intro } from '../model'
 export default function HeroSection() {
   return (
     <section className="mb-16">
-      <div className="text-[11px] tracking-[0.5em] text-white/40">
+      <div className="font-detail text-[11px] uppercase text-[#f0c979]/70">
         {intro.label}
       </div>
 
-      <h1 className="mt-6 text-5xl font-semibold leading-tight tracking-tight">
+      <h1 className="font-display mt-6 text-6xl font-normal leading-none text-white sm:text-7xl">
         {intro.name}
       </h1>
 
-      <p className="mt-4 text-base text-white/80">{intro.title}</p>
+      <p className="mt-5 text-[15px] font-medium text-white/85">
+        {intro.title}
+      </p>
 
       <p className="mt-6 max-w-xl text-base leading-8 text-white/65">
         {intro.description}

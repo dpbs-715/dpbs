@@ -2,6 +2,11 @@
 
 :root {
   color-scheme: dark;
+  --font-display: "Bodoni 72", Didot, "Iowan Old Style", "Songti SC",
+    "Noto Serif CJK SC", "Source Han Serif SC", serif;
+  --font-body: "Avenir Next", Avenir, "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei UI", "Noto Sans CJK SC", sans-serif;
+  --font-detail: "SF Mono", "Cascadia Code", "JetBrains Mono", Menlo, monospace;
 }
 
 html {
@@ -12,13 +17,12 @@ body {
   margin: 0;
   background: #000;
   color: #fff;
-  font-family:
-    Inter,
-    "SF Pro Display",
-    "SF Pro Text",
-    "Segoe UI",
-    Arial,
-    sans-serif;
+  font-family: var(--font-body);
+  font-feature-settings:
+    "kern" 1,
+    "liga" 1,
+    "calt" 1;
+  letter-spacing: 0.01em;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -31,4 +35,23 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+::selection {
+  background: #f0c979;
+  color: #050505;
+}
+
+.font-display {
+  font-family: var(--font-display);
+  font-feature-settings:
+    "kern" 1,
+    "liga" 1,
+    "swsh" 1;
+  letter-spacing: 0;
+}
+
+.font-detail {
+  font-family: var(--font-detail);
+  letter-spacing: 0.16em;
 }

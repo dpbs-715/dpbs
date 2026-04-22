@@ -9,8 +9,8 @@ export default function SectionHeading({
 }: SectionHeadingProps) {
   return (
     <div className="flex items-center gap-4">
-      <span className="text-xs text-white/35">{index}</span>
-      <h2 className="text-lg font-medium tracking-wide">{title}</h2>
+      <span className="font-detail text-[10px] text-[#f0c979]/55">{index}</span>
+      <h2 className="font-display text-2xl font-normal text-white">{title}</h2>
     </div>
   )
 }
