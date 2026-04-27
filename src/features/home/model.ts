@@ -57,7 +57,13 @@ export const projects: ProjectItem[] = [
     href: 'https://github.com/dpbs-715/dpbs',
     description:
       'A minimal personal resume site using Next.js App Router, React, TypeScript, and Tailwind CSS. Designed as a small public surface for keeping profile content, dependency hygiene, and deployment workflow clean.',
-  }
+  },
+  {
+    title: 'XSwitch',
+    href: 'https://github.com/dpbs-715/XSwitch',
+    description:
+      'A server-local Xray subscription switching panel built with Next.js, React, and TypeScript. It refreshes subscriptions, parses vmess, vless, trojan, and ss nodes, checks TCP latency, writes selected outbound config with backups, and restarts Xray safely.',
+  },
 ]
 
 export const summary =
