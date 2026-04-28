@@ -9,3 +9,5 @@ export type ProjectItem = {
   description: string
   href?: string
 }
+
+export type Language = 'en' | 'zh'

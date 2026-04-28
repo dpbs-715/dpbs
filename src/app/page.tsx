@@ -1,5 +1,20 @@
 import HomePage from '@/features/home'
+import { defaultLanguage, resolveLanguage } from '@/features/home/model'
 
-export default function Page() {
-  return <HomePage />
+type PageProps = {
+  searchParams?: Promise<Record<string, string | string[] | undefined>>
+}
+
+export default async function Page({ searchParams }: PageProps) {
+  const params = await searchParams
+  const languageParam = Array.isArray(params?.lang)
+    ? params.lang[0]
+    : params?.lang
+  const envLanguage = process.env.NEXT_PUBLIC_DEFAULT_LANGUAGE
+  const initialLanguage =
+    resolveLanguage(languageParam) ??
+    resolveLanguage(envLanguage) ??
+    defaultLanguage
+
+  return <HomePage initialLanguage={initialLanguage} />
 }

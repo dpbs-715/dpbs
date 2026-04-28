@@ -1,6 +1,16 @@
-import { contacts, intro } from '../model'
+import type { ContactItem } from '../types'
 
-export default function HeroSection() {
+type HeroSectionProps = {
+  contacts: ContactItem[]
+  intro: {
+    label: string
+    name: string
+    title: string
+    description: string
+  }
+}
+
+export default function HeroSection({ contacts, intro }: HeroSectionProps) {
   return (
     <section className="mb-16">
       <div className="font-detail text-[11px] uppercase text-[#f0c979]/70">

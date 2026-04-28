@@ -1,10 +1,18 @@
-import { projects } from '../model'
+import type { ProjectItem } from '../types'
 import SectionHeading from '@/shared/ui/section-heading'
 
-export default function ProjectsSection() {
+type ProjectsSectionProps = {
+  projects: ProjectItem[]
+  title: string
+}
+
+export default function ProjectsSection({
+  projects,
+  title,
+}: ProjectsSectionProps) {
   return (
     <section className="py-12">
-      <SectionHeading index="02" title="Projects" />
+      <SectionHeading index="02" title={title} />
 
       <div className="mt-8 space-y-10">
         {projects.map((project) => (
