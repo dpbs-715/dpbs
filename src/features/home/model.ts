@@ -16,6 +16,8 @@ type HomeCopy = {
   summary: string
 }
 
+export const icpNumber = '鲁ICP备2026022066号'
+
 const skills: string[] = [
   'Vue 3',
   'TypeScript',
@@ -70,6 +72,12 @@ export const homeCopy: Record<Language, HomeCopy> = {
     projectsTitle: 'Projects',
     projects: [
       {
+        title: 'JuiceWord',
+        href: 'https://github.com/dpbs-715/JuiceWord',
+        description:
+          'A TypeScript browser extension for selection-based translation. Built with WXT, React, Chrome extension APIs, local chrome.storage configuration, a native content-script floating panel, and OpenAI-compatible chat completions.',
+      },
+      {
         title: 'Vunio',
         href: 'https://github.com/dpbs-715/vunio',
         description:
@@ -111,6 +119,12 @@ export const homeCopy: Record<Language, HomeCopy> = {
     skills,
     projectsTitle: '项目',
     projects: [
+      {
+        title: 'JuiceWord',
+        href: 'https://github.com/dpbs-715/JuiceWord',
+        description:
+          '一个用于划词翻译的 TypeScript 浏览器插件，基于 WXT、React、Chrome extension APIs 和本地 chrome.storage 配置构建，支持右键触发翻译，并用原生 content script 浮层展示 OpenAI 兼容接口返回的结果。',
+      },
       {
         title: 'Vunio',
         href: 'https://github.com/dpbs-715/vunio',

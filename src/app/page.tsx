@@ -15,6 +15,7 @@ export default async function Page({ searchParams }: PageProps) {
     resolveLanguage(languageParam) ??
     resolveLanguage(envLanguage) ??
     defaultLanguage
+  const showIcp = resolveLanguage(envLanguage) === 'zh'
 
-  return <HomePage initialLanguage={initialLanguage} />
+  return <HomePage initialLanguage={initialLanguage} showIcp={showIcp} />
 }

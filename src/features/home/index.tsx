@@ -6,15 +6,17 @@ import SkillsSection from './sections/skills'
 import ProjectsSection from './sections/projects'
 import SummarySection from './sections/summary'
 import Divider from '@/shared/ui/divider'
-import { defaultLanguage, homeCopy, languageOptions } from './model'
+import { defaultLanguage, homeCopy, icpNumber, languageOptions } from './model'
 import type { Language } from './types'
 
 type HomePageProps = {
   initialLanguage?: Language
+  showIcp?: boolean
 }
 
 export default function HomePage({
   initialLanguage = defaultLanguage,
+  showIcp = false,
 }: HomePageProps) {
   const [language, setLanguage] = useState<Language>(initialLanguage)
   const copy = homeCopy[language]
@@ -64,6 +66,18 @@ export default function HomePage({
       <ProjectsSection projects={copy.projects} title={copy.projectsTitle} />
       <Divider />
       <SummarySection summary={copy.summary} title={copy.summaryTitle} />
+      {showIcp ? (
+        <footer className="pt-10 text-center text-xs text-white/35">
+          <a
+            href="https://beian.miit.gov.cn/"
+            target="_blank"
+            rel="noreferrer"
+            className="transition hover:text-white/65"
+          >
+            {icpNumber}
+          </a>
+        </footer>
+      ) : null}
     </main>
   )
 }
