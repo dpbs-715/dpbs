@@ -84,6 +84,12 @@ export const homeCopy: Record<Language, HomeCopy> = {
           'A Vue 3.5 + TypeScript component library template built around Turborepo, pnpm, VitePress docs, shared hooks, directives, utilities, lint presets, changesets, and package publishing workflows.',
       },
       {
+        title: 'Skills',
+        href: 'https://github.com/dpbs-715/skills',
+        description:
+          'A personal rules and skills repository for AI coding agents. It separates durable engineering rules, task-triggered skill packages, upstream documentation sources, vendored skills, and TypeScript scripts for syncing and linking skills into local agent directories.',
+      },
+      {
         title: 'DPBS Resume Site',
         href: 'https://github.com/dpbs-715/dpbs',
         description:
@@ -130,6 +136,12 @@ export const homeCopy: Record<Language, HomeCopy> = {
         href: 'https://github.com/dpbs-715/vunio',
         description:
           '一个 Vue 3.5 + TypeScript 组件库模板，围绕 Turborepo、pnpm、VitePress 文档、共享 hooks、directives、utilities、lint 预设、changesets 和发包流程构建。',
+      },
+      {
+        title: 'Skills',
+        href: 'https://github.com/dpbs-715/skills',
+        description:
+          '一个面向 AI coding agents 的个人规则与技能仓库，将长期工程规则、任务触发型 skill packages、上游文档源、vendored skills，以及用于同步和链接本地 agent 技能目录的 TypeScript 脚本分层管理。',
       },
       {
         title: 'DPBS Resume Site',
