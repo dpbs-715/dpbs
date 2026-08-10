@@ -8,8 +8,10 @@
     "pnpm": ">=10.28.1"
   },
   "scripts": {
-    "dev": "next dev --port 3001",
-    "build": "next build",
+    "dev": "cross-env NEXT_PUBLIC_DEFAULT_LANGUAGE=en next dev --port 3001",
+    "dev:zh": "cross-env NEXT_PUBLIC_DEFAULT_LANGUAGE=zh next dev --port 3001",
+    "build": "cross-env NEXT_PUBLIC_DEFAULT_LANGUAGE=en next build",
+    "build:zh": "cross-env NEXT_PUBLIC_DEFAULT_LANGUAGE=zh next build",
     "start": "next start --port 3001",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit"
@@ -24,11 +26,11 @@
     "@types/node": "^25.6.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
+    "cross-env": "^10.1.0",
     "eslint": "^9.39.4",
     "eslint-config-next": "^16.2.4",
     "postcss": "^8.5.10",
     "tailwindcss": "^4.2.4",
     "typescript": "^6.0.3"
   }
-
 }

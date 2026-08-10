@@ -72,16 +72,28 @@ export const homeCopy: Record<Language, HomeCopy> = {
     projectsTitle: 'Projects',
     projects: [
       {
+        title: 'Vunio',
+        href: 'https://github.com/dpbs-715/vunio',
+        description:
+          'A Vue 3.5 + TypeScript component library template built around Turborepo, pnpm, VitePress docs, shared hooks, directives, utilities, lint presets, changesets, and package publishing workflows.',
+      },
+      {
+        title: 'AI Design',
+        href: 'https://github.com/dpbs-715/ai-design',
+        description:
+          'An AI-assisted visual page design workbench built as a pnpm and Turborepo monorepo. It combines a Vue 3 canvas editor with materials, layers, properties, data sources, and Monaco scripting; a NestJS backend; and a LangGraph agent workflow backed by PostgreSQL and Redis.',
+      },
+      {
         title: 'JuiceWord',
         href: 'https://github.com/dpbs-715/JuiceWord',
         description:
           'A TypeScript browser extension for selection-based translation. Built with WXT, React, Chrome extension APIs, local chrome.storage configuration, a native content-script floating panel, and OpenAI-compatible chat completions.',
       },
       {
-        title: 'Vunio',
-        href: 'https://github.com/dpbs-715/vunio',
+        title: 'XSwitch',
+        href: 'https://github.com/dpbs-715/XSwitch',
         description:
-          'A Vue 3.5 + TypeScript component library template built around Turborepo, pnpm, VitePress docs, shared hooks, directives, utilities, lint presets, changesets, and package publishing workflows.',
+          'A server-local Xray subscription switching panel built with Next.js, React, and TypeScript. It refreshes subscriptions, parses vmess, vless, trojan, and ss nodes, checks TCP latency, writes selected outbound config with backups, and restarts Xray safely.',
       },
       {
         title: 'Skills',
@@ -94,12 +106,6 @@ export const homeCopy: Record<Language, HomeCopy> = {
         href: 'https://github.com/dpbs-715/dpbs',
         description:
           'A minimal personal resume site using Next.js App Router, React, TypeScript, and Tailwind CSS. Designed as a small public surface for keeping profile content, dependency hygiene, and deployment workflow clean.',
-      },
-      {
-        title: 'XSwitch',
-        href: 'https://github.com/dpbs-715/XSwitch',
-        description:
-          'A server-local Xray subscription switching panel built with Next.js, React, and TypeScript. It refreshes subscriptions, parses vmess, vless, trojan, and ss nodes, checks TCP latency, writes selected outbound config with backups, and restarts Xray safely.',
       },
     ],
     summaryTitle: 'Summary',
@@ -126,16 +132,28 @@ export const homeCopy: Record<Language, HomeCopy> = {
     projectsTitle: '项目',
     projects: [
       {
+        title: 'Vunio',
+        href: 'https://github.com/dpbs-715/vunio',
+        description:
+          '一个 Vue 3.5 + TypeScript 组件库模板，围绕 Turborepo、pnpm、VitePress 文档、共享 hooks、directives、utilities、lint 预设、changesets 和发包流程构建。',
+      },
+      {
+        title: 'AI Design',
+        href: 'https://github.com/dpbs-715/ai-design',
+        description:
+          '一个基于 pnpm 和 Turborepo monorepo 构建的 AI 辅助可视化页面设计工作台，集成了具备物料、图层、属性、数据源和 Monaco 脚本编辑能力的 Vue 3 画布编辑器、NestJS 服务端、LangGraph Agent 工作流，并使用 PostgreSQL 和 Redis 持久化数据。',
+      },
+      {
         title: 'JuiceWord',
         href: 'https://github.com/dpbs-715/JuiceWord',
         description:
           '一个用于划词翻译的 TypeScript 浏览器插件，基于 WXT、React、Chrome extension APIs 和本地 chrome.storage 配置构建，支持右键触发翻译，并用原生 content script 浮层展示 OpenAI 兼容接口返回的结果。',
       },
       {
-        title: 'Vunio',
-        href: 'https://github.com/dpbs-715/vunio',
+        title: 'XSwitch',
+        href: 'https://github.com/dpbs-715/XSwitch',
         description:
-          '一个 Vue 3.5 + TypeScript 组件库模板，围绕 Turborepo、pnpm、VitePress 文档、共享 hooks、directives、utilities、lint 预设、changesets 和发包流程构建。',
+          '一个运行在服务器本地的 Xray 订阅切换面板，支持刷新订阅、解析 vmess、vless、trojan、ss 节点、检测 TCP 延迟、带备份写入选中出站配置，并安全重启 Xray。',
       },
       {
         title: 'Skills',
@@ -148,12 +166,6 @@ export const homeCopy: Record<Language, HomeCopy> = {
         href: 'https://github.com/dpbs-715/dpbs',
         description:
           '一个使用 Next.js App Router、React、TypeScript 和 Tailwind CSS 构建的极简个人简历站点，用于维护公开资料、依赖健康和部署流程。',
-      },
-      {
-        title: 'XSwitch',
-        href: 'https://github.com/dpbs-715/XSwitch',
-        description:
-          '一个运行在服务器本地的 Xray 订阅切换面板，支持刷新订阅、解析 vmess、vless、trojan、ss 节点、检测 TCP 延迟、带备份写入选中出站配置，并安全重启 Xray。',
       },
     ],
     summaryTitle: '总结',
