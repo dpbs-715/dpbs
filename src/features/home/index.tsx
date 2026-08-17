@@ -35,7 +35,7 @@ export default function HomePage({
     <Droplets
       className="resume-droplets bg-black"
       contentClassName="bg-cover bg-[position:42%_center] bg-no-repeat sm:bg-center"
-      interactionDistortion={0.7}
+      interactionDistortion={3}
       contentStyle={{
         backgroundImage:
           'linear-gradient(90deg, rgb(0 0 0 / 48%), rgb(0 0 0 / 68%) 50%, rgb(0 0 0 / 46%)), linear-gradient(180deg, rgb(0 0 0 / 12%), rgb(0 0 0 / 48%)), url("/resume-rain-background.jpg")',
