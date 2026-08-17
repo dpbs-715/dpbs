@@ -55,3 +55,12 @@ a {
   font-family: var(--font-detail);
   letter-spacing: 0.16em;
 }
+
+.droplets-scroll-content {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.droplets-scroll-content::-webkit-scrollbar {
+  display: none;
+}
