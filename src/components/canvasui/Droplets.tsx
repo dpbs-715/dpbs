@@ -86,10 +86,18 @@ const DEFAULTS: Required<DropletsOptions> = {
 type PaintableCanvas = HTMLCanvasElement & {
   onpaint?: (() => void) | null;
   requestPaint?: () => void;
+  updateElementGeometry?: (
+    element: Element,
+    options: { canvasTransform: DOMMatrix },
+  ) => void;
 };
 
 type ElementImageContext = CanvasRenderingContext2D & {
-  drawElementImage?: (element: Element, x: number, y: number) => void;
+  drawElementImage?: (
+    element: Element,
+    x: number,
+    y: number,
+  ) => DOMMatrix | void;
 };
 
 const VERT = `#version 300 es
@@ -370,10 +378,23 @@ export function createDroplets(
   let wake = () => {};
 
   if (htmlInCanvas) {
+    if ("content" in source) {
+      source.setAttribute("content", "drawable");
+      content.setAttribute("drawable", "");
+    } else {
+      source.setAttribute("layoutsubtree", "");
+    }
     paintable.onpaint = () => {
       try {
         sourceCtx!.reset();
-        sourceCtx!.drawElementImage!(content, 0, 0);
+        const transform = sourceCtx!.drawElementImage!(content, 0, 0);
+        // Chrome 154 requires explicit geometry updates; newer versions sync
+        // automatically and return void. The matrix already accounts for DPR.
+        if (transform && typeof paintable.updateElementGeometry === "function") {
+          paintable.updateElementGeometry(content, {
+            canvasTransform: transform,
+          });
+        }
         contentDirty = true;
         wake();
       } catch {}
